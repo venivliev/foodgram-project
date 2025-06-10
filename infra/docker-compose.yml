@@ -4,7 +4,7 @@ services:
 
   frontend:
     container_name: foodgram-front
-    # image: venivliev/foodgram_front:latest
+    image: venivliev/foodgram_front:latest
     build: ../frontend
     volumes:
       - ./frontend/:/app/result_build/
@@ -20,7 +20,7 @@ services:
 
   backend:
     container_name: foodgram-app
-    # image: venivliev/foodgram_back:latest
+    image: venivliev/foodgram_back:latest
     build: ../backend
     restart: always
     volumes:
